@@ -1,4 +1,5 @@
 import { PlayerService } from "../service/player.service";
+import { TeamService } from "../service/team.service";
 
 const awilix = require("awilix");
 
@@ -10,8 +11,8 @@ export const container = awilix.createContainer({
 // Register dependencies
 export const registerDependencies = () => {
   container.register({
-    // Player
     PlayerService: awilix.asClass(PlayerService),
+    TeamService: awilix.asClass(TeamService),
   });
 
   console.log(`Dependencies: Registered`.blue.underline.bold);
