@@ -1,5 +1,3 @@
-import { PlayerRepository } from "../data/repository/player.repository";
-import { PlayerDS } from "../data/source/player/player.data.source";
 import { PlayerService } from "../service/player.service";
 
 const awilix = require("awilix");
@@ -13,8 +11,6 @@ export const container = awilix.createContainer({
 export const registerDependencies = () => {
   container.register({
     // Player
-    PlayerDS: awilix.asClass(PlayerDS),
-    PlayerRepo: awilix.asClass(PlayerRepository),
     PlayerService: awilix.asClass(PlayerService),
   });
 
