@@ -24,11 +24,11 @@ export const PlayerSchema = {
     allowNull: false,
   },
   position: {
-    type: DataTypes.STRING,
+    type: DataTypes.STRING(32),
     allowNull: true,
   },
   age_group: {
-    type: DataTypes.STRING,
+    type: DataTypes.STRING(50),
     allowNull: true,
   },
 };
