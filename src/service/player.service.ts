@@ -1,4 +1,3 @@
-import { Sequelize } from "sequelize";
 import { databaseConnection } from "../config/db";
 import { Player } from "../types/player.types";
 import { PromiseResponse } from "../types/promiseResponse.types";

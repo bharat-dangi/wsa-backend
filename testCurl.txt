@@ -1,0 +1,9 @@
+Get All Teams:
+curl --location 'localhost:5000/v1/team/get-all-teams'
+
+
+
+
+Returning all the players who can be borrowed into a specific team based on
+the rules applicable to the division
+curl --location 'localhost:5000/v1/player/get-all-players-based-on-team-rule?team_id=2'
